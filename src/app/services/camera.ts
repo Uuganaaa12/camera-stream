@@ -17,15 +17,12 @@ export interface CameraResponse {
   providedIn: 'root'
 })
 export class CameraService {
-
   private baseUrl = 'https://ardelle-feeless-unwittingly.ngrok-free.dev';
-  
   private token = 'secret-token-location1-xyz';
 
   constructor(private http: HttpClient) {}
 
   getCameras(): Observable<CameraResponse> {
-    // Ngrok warning давах header
     const headers = new HttpHeaders({
       'ngrok-skip-browser-warning': 'true'
     });
