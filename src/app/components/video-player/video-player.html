@@ -1,0 +1,8 @@
+<div class="player-wrapper">
+  <h3>{{ cameraName }}</h3>
+  <video #videoElement controls autoplay muted playsinline class="video-player">
+  </video>
+  <div class="status" [ngClass]="statusClass">
+    {{ status }}
+  </div>
+</div>

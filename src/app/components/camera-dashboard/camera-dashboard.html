@@ -1,0 +1,16 @@
+<div class="dashboard">
+  <h1>{{ location || 'Камерын систем' }}</h1>
+
+  <div *ngIf="loading" class="loading">
+    Ачаалж байна...
+  </div>
+
+  <div *ngIf="error" class="error">
+    {{ error }}
+  </div>
+
+  <div class="camera-grid" *ngIf="!loading && !error">
+    <app-video-player *ngFor="let camera of cameras" [streamUrl]="camera.streamUrl" [cameraName]="camera.name">
+    </app-video-player>
+  </div>
+</div>

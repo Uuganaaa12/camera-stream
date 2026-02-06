@@ -1,0 +1,41 @@
+.player-wrapper {
+  margin: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background: #f9f9f9;
+}
+
+h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.video-player {
+  width: 100%;
+  background: #000;
+  border-radius: 4px;
+}
+
+.status {
+  margin-top: 8px;
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.status.loading {
+  background: #ffc107;
+  color: #000;
+}
+
+.status.playing {
+  background: #4caf50;
+  color: #fff;
+}
+
+.status.error {
+  background: #f44336;
+  color: #fff;
+}
